@@ -16,5 +16,5 @@ jobs:
       run: npm install
     - name: Run test
       run: npm test
-    - name: echo "All tests Passed!"
-      run: "Test Passed"
+    - name: Test passed
+      run: echo "All tests Passed!"
