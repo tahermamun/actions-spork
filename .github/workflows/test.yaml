@@ -1,0 +1,20 @@
+name: Test Using Mocha
+
+on: [ push ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Use Node.js
+      uses: actions/setup-node
+      with:
+        node-version: '20'
+    - name: Install dependencies
+      run: npm install
+    - name: Run test
+      run: npm test
+    - name: echo "All tests Passed!"
+      run: "Test Passed"
